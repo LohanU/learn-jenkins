@@ -19,6 +19,7 @@ pipeline {
             steps {
                
                     sh 'echo this is deploy'
+                    error 'pipeline failed'
                 }  
             
             
@@ -36,7 +37,7 @@ pipeline {
     failure{
         echo "this sections runs when pipeline failure"
     }
-    
+
  }
 
 }

@@ -21,6 +21,22 @@ pipeline {
                     sh 'echo this is deploy'
                 }  
             
+            
         }
+    
+ }
+ post {
+    always {
+        echo "This sections runs always"
+    
     }
+    success{
+        echo "this sections runs when pipeline success"
+    }
+    failure{
+        echo "this sections runs when pipeline failure"
+    }
+    
+ }
+
 }

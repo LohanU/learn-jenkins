@@ -51,9 +51,9 @@ pipeline {
 
                 echo "Toggle: ${params.TOGGLE}"
 
-                echo "Choice: ${params.CHOICE}"
+                echo "Choice: ${params.CHOICE}"  
 
-                echo "Password: ${params.PASSWORD}"
+                echo "Password: ${params.PASSWORD}"  
       }
     }
  }
